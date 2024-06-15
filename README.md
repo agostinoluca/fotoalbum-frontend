@@ -1,5 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 # Fotoalbum
 
 ### Consegna
@@ -23,11 +21,11 @@ Questa webapp offrirà una piattaforma completa per il fotografo, permettendogli
 
 L'area di amministrazione sarà riservata esclusivamente al fotografo e permetterà di gestire tutte le foto con le seguenti funzionalità:
 
--   visualizzazione elenco di tutte le foto caricate;
--   visualizzazione dei dettagli;
--   aggiunta di nuova foto;
--   modifica foto esistente;
--   eliminazione foto esistente.
+- visualizzazione elenco di tutte le foto caricate;
+- visualizzazione dei dettagli;
+- aggiunta di nuova foto;
+- modifica foto esistente;
+- eliminazione foto esistente.
 
 Queste operazioni possono essere svolte solo dall’utente Admin che ha accesso alla dashboard.
 Una foto contiene almeno le seguenti informazioni: titolo, descrizione, upload immagine, categoria, “in evidenza”.
@@ -36,8 +34,8 @@ Una foto contiene almeno le seguenti informazioni: titolo, descrizione, upload i
 
 L'area pubblica sarà una web app permetterà agli utenti di visualizzare le lista di foto pubblicate dal fotografo assieme ad alcune funzionalità:
 
--   filtrare per almeno per categoria le immagini;
--   filtrare per le immagini “in evidenza”.
+- filtrare per almeno per categoria le immagini;
+- filtrare per le immagini “in evidenza”.
 
 Definisci in autonomia l’interfaccia della web app. Scegli un approccio creativo o più essenziale.
 In ogni caso cerca di presentare al meglio il contenuto e rendi fluido il layout sfruttando strategie di responsive web design.
@@ -70,4 +68,5 @@ Cerca di curare qualche dettaglio di UX/UI. Ad es. prevedi un loader per i caric
 ## Crediti
 
 <a href="https://it.textstudio.com/">Font generati con textstudio</a> <br>
-<a href="https://unsplash.com/">Foto scaricate da Unsplash (vari autori)</a>
+<a href="https://unsplash.com/">Foto scaricate da Unsplash (vari autori)</a> <br>
+<a href="https://favicon.io/">Favicon generator utilizzato</a>
