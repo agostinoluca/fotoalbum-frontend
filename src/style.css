@@ -1,3 +1,79 @@
+/* #region Common */
 body {
   font-family: "Merienda", cursive;
 }
+
+:root {
+  --fotoalbum-primary: #0022fe;
+  --fotoalbum-secondary: #a5a5a5;
+  --fotoalbum-lightblue: #00e0f6;
+  --fotoalbum-light: #f6f7ff;
+  --fotoalbum-dark: #000000;
+  --fotoalbum-danger: #ff0000;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* #endregion Common */
+
+/* #region Utility */
+.btn_custom {
+  background-color: var(--fotoalbum-primary);
+  color: var(--fotoalbum-light);
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--fotoalbum-light);
+    box-shadow: 0 0 0.25rem var(--fotoalbum-light);
+  }
+}
+
+/* #endregion Utility */
+
+/* #region color utilities */
+
+.text_primary {
+  color: var(--fotoalbum-primary);
+}
+
+.text_secondary {
+  color: var(--fotoalbum-secondary);
+}
+
+.text_lightblue {
+  color: var(--fotoalbum-lightblue);
+}
+
+.text_light {
+  color: var(--fotoalbum-light);
+}
+
+.text_dark {
+  color: var(--fotoalbum-dark);
+}
+
+.text_danger {
+  color: var(--fotoalbum-danger);
+}
+
+.bg_primary {
+  background-color: var(--fotoalbum-primary);
+}
+
+/* #endregion Text style */
+
+
+/* #region Header */
+.jumbotron {
+  background-image: url(assets/img/jumbotron.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* #endregion Header */

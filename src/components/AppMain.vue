@@ -1,12 +1,17 @@
 <script>
+import PhotoCard from './PhotoCard.vue';
+
 export default {
     name: 'AppMain',
+    components: {
+        PhotoCard,
+    }
 }
 </script>
 
 <template>
     <main>
-        <h1>main</h1>
+        <PhotoCard></PhotoCard>
     </main>
 </template>
 
