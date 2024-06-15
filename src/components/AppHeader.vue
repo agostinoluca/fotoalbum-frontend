@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <header class="bg-primary bg-opacity-25 position-fixed w-100 shadow">
+    <header class="bg-primary bg-opacity-25 position-fixed z-3 w-100 shadow">
 
 
         <div class="logo img-fluid px-3">
