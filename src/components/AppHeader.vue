@@ -21,7 +21,7 @@ export default {
 
             <div class="px-1">
                 <button class="btn_custom">
-                    <a href="#contact_form">Contact me</a>
+                    <a href="#contact_form">Contact me <i class="fa fa-pencil"></i></a>
                 </button>
             </div>
         </div>
@@ -51,12 +51,14 @@ export default {
             </div>
         </div>
 
-
+        <div id="featured_photos" class="text-center pt-5 pb-3 text-uppercase fs-3 text_light">
+            <span>Explore my stunning photo collection and find your favorite shots!</span>
+        </div>
         <div id="group_filter" class="bg_primary pt-3">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                     <div class="col m-auto">
-                        <select class="form-select form-select-sm" v-model="state.selectedCategory">
+                        <select class="form-select form-select-sm mb-2" v-model="state.selectedCategory">
                             <option value="">Filter by category</option>
                             <option v-for="category in state.categories" :key="category.id" :value="category.id">
                                 {{ category.name }}

@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <section id="featured_photos" class="photos bg_primary pb-3" v-if="state.photos">
+    <section class="photos bg_primary pb-3" v-if="state.photos">
         <div class="container photo_section">
             <div v-if="state.photos.data && state.photos.data.length"
                 class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
@@ -91,7 +91,7 @@ export default {
             </div>
         </div>
 
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center px-4">
             <nav aria-label="Page navigation" class="mt-4">
                 <ul class="pagination">
                     <li class="page-item" :class="{ 'disabled': !link.url, 'active': link.active }"
@@ -103,10 +103,10 @@ export default {
                 </ul>
             </nav>
             <div class="d-flex align-items-center gap-3 py-5">
-                <a class="text_lightblue on_hover_pulse_light" href="#group_filter"><i
-                        class="fa fa-chevron-circle-up fa-2x"></i>
+                <a class="text_lightblue on_hover_pulse_light" href="#contact_form"><i
+                        class="fa fa-chevron-circle-down fa-2x"></i>
                 </a>
-                <h4 class="text_light">Search for more photos</h4>
+                <h4 class="text_light">Contact me</h4>
             </div>
         </div>
 
