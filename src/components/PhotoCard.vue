@@ -91,7 +91,7 @@ export default {
             </div>
         </div>
 
-        <div class="container">
+        <div class="container d-flex justify-content-between align-items-center">
             <nav aria-label="Page navigation" class="mt-4">
                 <ul class="pagination">
                     <li class="page-item" :class="{ 'disabled': !link.url, 'active': link.active }"
@@ -102,6 +102,12 @@ export default {
                     </li>
                 </ul>
             </nav>
+            <div class="d-flex align-items-center gap-3 py-5">
+                <a class="text_lightblue on_hover_pulse_light" href="#group_filter"><i
+                        class="fa fa-chevron-circle-up fa-2x"></i>
+                </a>
+                <h4 class="text_light">Search for more photos</h4>
+            </div>
         </div>
 
 

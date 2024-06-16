@@ -45,7 +45,7 @@ export default {
         </div>
 
 
-        <div class="bg_primary pt-5">
+        <div id="group_filter" class="bg_primary pt-3">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                     <div class="col m-auto">
@@ -57,8 +57,8 @@ export default {
                         </select>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="form-check form-check-inline">
+                <div>
+                    <div class="d-flex justify-content-center gap-1 py-2">
                         <input class="form-check-input" type="checkbox" v-model="state.evidence" value="1">
                         <label class="form-check-label text_light" for="evidence">Only highlight photos</label>
                     </div>
