@@ -11,13 +11,20 @@ export default {
 </script>
 
 <template>
-    <header class="bg-primary bg-opacity-25 position-fixed z-3 w-100 shadow">
+    <header class="bg-primary bg-opacity-50 position-fixed z-3 w-100 shadow  px-3">
 
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo img-fluid">
+                <img width="200" src="../assets/img/logo.png" alt="Logo FotoAlbum">
+            </div>
+            <!-- /logo-->
 
-        <div class="logo img-fluid px-3">
-            <img width="200" src="../assets/img/logo.png" alt="Logo FotoAlbum">
+            <div class="px-1">
+                <button class="btn_custom">
+                    <a href="#contact_form">Contact me</a>
+                </button>
+            </div>
         </div>
-        <!-- /logo-->
     </header>
 
 
