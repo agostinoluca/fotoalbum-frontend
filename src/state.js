@@ -9,6 +9,7 @@ export const state = reactive({
   photos: null,
   categories: [],
   selectedCategory: "",
+  evidence: false,
 
   callApi(photos_url) {
     axios
@@ -33,6 +34,10 @@ export const state = reactive({
       urlSearch += `&search=&category=${this.selectedCategory}`;
     }
 
+    if (this.evidence) {
+      urlSearch += "&evidence=1";
+    }
+
     // console.log(urlSearch);
     this.callApi(urlSearch);
   },
@@ -41,10 +46,14 @@ export const state = reactive({
     let photos_url =
       this.base_api_url + this.photos_endpoint + `?search=${this.search_photo}`;
 
+    if (this.evidence) {
+      photos_url += "&evidence=1";
+    }
+
     if (this.selectedCategory) {
       photos_url += `&category=${this.selectedCategory}`;
     }
-
+    console.log(photos_url);
     this.callApi(photos_url);
   },
 

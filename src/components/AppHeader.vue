@@ -45,30 +45,26 @@ export default {
         </div>
 
 
-        <nav class="bg_primary pt-5">
+        <div class="bg_primary pt-5">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col">
-                        <div class="w-75 m-auto">
-                            <select class="form-select form-select-sm" v-model="state.selectedCategory">
-                                <option value="">Filter by category</option>
-                                <option v-for="category in state.categories" :key="category.id" :value="category.id">
-                                    {{ category.name }}
-                                </option>
-                            </select>
-                        </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    <div class="col m-auto">
+                        <select class="form-select form-select-sm" v-model="state.selectedCategory">
+                            <option value="">Filter by category</option>
+                            <option v-for="category in state.categories" :key="category.id" :value="category.id">
+                                {{ category.name }}
+                            </option>
+                        </select>
                     </div>
-                    <div class="col">
-                        <div class="w-75 m-auto">
-                            <select class="form-select form-select-sm" name="" id="">
-                                <option selected>Filter by Tags</option>
-                                <option value="">New Delhi</option>
-                            </select>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" v-model="state.evidence" value="1">
+                        <label class="form-check-label text_light" for="evidence">Only highlight photos</label>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
 
 
         <div class="container py-3">
