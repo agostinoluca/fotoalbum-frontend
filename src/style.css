@@ -93,6 +93,16 @@ a {
 
 /* #endregion Header */
 
+
+/* #region Main */
+
+.photo_section {
+  min-height: 60vh;
+}
+
+/* #endregion Main */
+
+
 /* #region Keyframes */
 @keyframes pulse {
   50% {

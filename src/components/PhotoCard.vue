@@ -14,8 +14,9 @@ export default {
 
 <template>
     <section id="featured_photos" class="photos bg_primary pb-3" v-if="state.photos">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-sm-3 g-4">
+        <div class="container photo_section">
+            <div v-if="state.photos.data && state.photos.data.length"
+                class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                 <div class="col" v-for="photo in state.photos.data">
                     <div class="card h-100">
 
@@ -80,8 +81,17 @@ export default {
                     </div>
                 </div>
             </div>
+            <div v-else class="container text-center d-flex justify-content-center align-items-center gap-3 py-5">
+                <div>
+                    <img width="200px" src="../assets/img/not_available.png" alt="">
+                </div>
+                <div class="fw-bold fs-4">
+                    No photos found with your filters. Try a new search!
+                </div>
+            </div>
+        </div>
 
-
+        <div class="container">
             <nav aria-label="Page navigation" class="mt-4">
                 <ul class="pagination">
                     <li class="page-item" :class="{ 'disabled': !link.url, 'active': link.active }"
@@ -92,7 +102,6 @@ export default {
                     </li>
                 </ul>
             </nav>
-
         </div>
 
 

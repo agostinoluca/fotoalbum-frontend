@@ -23,7 +23,18 @@ export const state = reactive({
   },
 
   changePage(url) {
-    this.callApi(url);
+    let urlSearch = url;
+
+    if (this.search_photo != "") {
+      urlSearch += `&search=${this.search_photo}`;
+    }
+
+    if (this.selectedCategory != "") {
+      urlSearch += `&search=&category=${this.selectedCategory}`;
+    }
+
+    // console.log(urlSearch);
+    this.callApi(urlSearch);
   },
 
   search() {

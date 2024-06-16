@@ -45,11 +45,11 @@ export default {
         </div>
 
 
-        <nav class="bg_primary py-3">
+        <nav class="bg_primary pt-5">
             <div class="container">
                 <div class="row text-center">
                     <div class="col">
-                        <div class="w-50 m-auto">
+                        <div class="w-75 m-auto">
                             <select class="form-select form-select-sm" v-model="state.selectedCategory">
                                 <option value="">Filter by category</option>
                                 <option v-for="category in state.categories" :key="category.id" :value="category.id">
@@ -59,7 +59,7 @@ export default {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="w-50 m-auto">
+                        <div class="w-75 m-auto">
                             <select class="form-select form-select-sm" name="" id="">
                                 <option selected>Filter by Tags</option>
                                 <option value="">New Delhi</option>
