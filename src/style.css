@@ -4,16 +4,22 @@ body {
 }
 
 :root {
-  --fotoalbum-primary: #0022fe;
+  --fotoalbum-primary: #2c7ab9;
   --fotoalbum-secondary: #a5a5a5;
-  --fotoalbum-lightblue: #00e0f6;
+  --fotoalbum-lightblue: #73d1dd;
   --fotoalbum-light: #f6f7ff;
   --fotoalbum-dark: #000000;
   --fotoalbum-danger: #ff0000;
+  --fotoalbum-gold: #FFBF00;
 }
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fotoalbum-light);
 }
 
 /* #endregion Common */
@@ -32,6 +38,11 @@ img {
     color: var(--fotoalbum-light);
     box-shadow: 0 0 0.25rem var(--fotoalbum-light);
   }
+}
+
+.on_hover_pulse_light:hover {
+  transform: scale(1.2);
+  animation: pulse infinite linear 1.5s;
 }
 
 /* #endregion Utility */
@@ -66,6 +77,10 @@ img {
   background-color: var(--fotoalbum-primary);
 }
 
+.bg_gold {
+  background-color: var(--fotoalbum-gold);
+}
+
 /* #endregion Text style */
 
 
@@ -77,3 +92,12 @@ img {
 }
 
 /* #endregion Header */
+
+/* #region Keyframes */
+@keyframes pulse {
+  50% {
+    color: var(--fotoalbum-light);
+  }
+}
+
+/* #endregion Keyframes */

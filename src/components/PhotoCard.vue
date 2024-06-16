@@ -19,8 +19,15 @@ export default {
                 <div class="col" v-for="photo in state.photos.data">
                     <div class="card h-100">
 
-                        <template v-if="photo.image">
-                            <img :src="photo.image.startsWith('upload') ? state.base_api_url + '/storage/' + photo.image : photo.image"
+                        <template v-if="photo.image && photo.evidence">
+                            <img class="rounded-top-2"
+                                :src="photo.image.startsWith('upload') ? state.base_api_url + '/storage/' + photo.image : photo.image"
+                                :alt="'Photo of ' + photo.title">
+                            <span class="bg_gold position-absolute end-0 mt-2 mx-1 px-2 rounded-3">TOP</span>
+                        </template>
+                        <template v-else-if="photo.image">
+                            <img class="rounded-top-2"
+                                :src="photo.image.startsWith('upload') ? state.base_api_url + '/storage/' + photo.image : photo.image"
                                 :alt="'Photo of ' + photo.title">
                         </template>
 
