@@ -65,11 +65,16 @@ export default {
                                                 :alt="'Photo of ' + photo.title">
                                         </template>
 
-                                        <div class="modal-body px-5 lead">
-                                            {{ photo.description }}
+                                        <div class="modal-body">
+                                            <div class=" px-5 lead">
+                                                {{ photo.description }}
+                                            </div>
+                                            <div v-for="tag in photo.tags" class="badge bg_primary fs-6 mt-3 mx-1">
+                                                {{ tag.name }}
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            <button type="button" class="btn_custom" data-bs-dismiss="modal">
                                                 <i class="fa-solid fa-angles-left"></i> Back
                                             </button>
                                         </div>
