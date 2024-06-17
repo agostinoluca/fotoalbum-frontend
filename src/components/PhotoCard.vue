@@ -19,7 +19,6 @@ export default {
                 class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                 <div class="col" v-for="photo in state.photos.data">
                     <div class="card h-100">
-
                         <template v-if="photo.image && photo.evidence">
                             <img class="rounded-top-2"
                                 :src="photo.image.startsWith('upload') ? state.base_api_url + '/storage/' + photo.image : photo.image"
@@ -118,6 +117,15 @@ export default {
 
 
     </section>
+    <div v-else class="bg_primary text-center d-flex justify-content-center align-items-center gap-3 py-5">
+        <div>
+            <img width="200px" src="../assets/img/not_available.png" alt="">
+        </div>
+        <div class="fw-bold fs-4">
+            <div class="text_danger text-uppercase py-1">500 Internal Server Error</div>
+            <span>An unexpected error occurred on the server. Please try again later.</span>
+        </div>
+    </div>
 </template>
 
 <style class="scoped">
