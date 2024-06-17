@@ -10,16 +10,19 @@ export const state = reactive({
   categories: [],
   selectedCategory: "",
   evidence: false,
+  loader: false,
 
   callApi(photos_url) {
+    this.loader = true;
     axios
       .get(photos_url)
       .then((resp) => {
-        // console.log(resp);
         this.photos = resp.data.results;
+        this.loader = false;
       })
       .catch((err) => {
         console.error(err);
+        this.loader = false;
       });
   },
 
