@@ -17,6 +17,3 @@ export default {
         <ContactForm></ContactForm>
     </main>
 </template>
-
-
-<style scoped></style>

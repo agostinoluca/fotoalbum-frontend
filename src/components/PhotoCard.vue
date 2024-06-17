@@ -93,7 +93,7 @@ export default {
                     </div>
                 </div>
                 <div v-else class="container text-center d-flex justify-content-center align-items-center gap-3 py-5">
-                    <div>
+                    <div class="py-5">
                         <img width="200px" src="../assets/img/not_available.png" alt="">
                     </div>
                     <div class="fw-bold fs-4">

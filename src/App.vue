@@ -13,7 +13,6 @@ export default {
   mounted() {
     const photos_url = state.base_api_url + state.photos_endpoint;
     const categories_url = state.base_api_url + state.categories_endpoint;
-    // console.log(photos_url);
     state.callApi(photos_url);
     state.getCategories(categories_url);
   }
@@ -25,5 +24,3 @@ export default {
   <AppMain></AppMain>
   <AppFooter></AppFooter>
 </template>
-
-<style></style>

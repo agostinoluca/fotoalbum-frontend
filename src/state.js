@@ -41,7 +41,6 @@ export const state = reactive({
       urlSearch += "&evidence=1";
     }
 
-    // console.log(urlSearch);
     this.callApi(urlSearch);
   },
 
@@ -56,22 +55,18 @@ export const state = reactive({
     if (this.selectedCategory) {
       photos_url += `&category=${this.selectedCategory}`;
     }
-    console.log(photos_url);
     this.callApi(photos_url);
   },
 
   getCategories() {
     const categories_url = state.base_api_url + state.categories_endpoint;
-    // console.log(categories_url);
     axios
       .get(categories_url)
       .then((resp) => {
-        // console.log(resp);
         const arrayCategory = resp.data.results;
         arrayCategory.forEach((category) => {
           this.categories.push(category);
         });
-        // console.log(this.categories);
       })
       .catch((err) => {
         console.error(err);
