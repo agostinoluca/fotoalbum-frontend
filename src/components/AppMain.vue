@@ -1,10 +1,12 @@
 <script>
 import PhotoCard from './PhotoCard.vue';
+import ContactForm from './ContactForm.vue';
 
 export default {
     name: 'AppMain',
     components: {
         PhotoCard,
+        ContactForm,
     }
 }
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
     <main>
         <PhotoCard></PhotoCard>
+        <ContactForm></ContactForm>
     </main>
 </template>
 
